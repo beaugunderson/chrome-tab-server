@@ -1,0 +1,29 @@
+{
+  "name": "Tab Server",
+  "version": "1.2",
+  "manifest_version": 2,
+  "description": "Expose your open tabs via HTTP.",
+
+  "icons": {
+    "16": "19.png"
+  },
+
+  "browser_action": {
+    "default_icon": "19.png",
+    "default_title": "Tab Server"
+  },
+
+  "permissions": [
+    "alarms",
+    "tabs",
+    "nativeMessaging"
+  ],
+
+  "background": {
+    "persistent": true,
+
+    "scripts": [
+      "tab-server.js"
+    ]
+  }
+}
